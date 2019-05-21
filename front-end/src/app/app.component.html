@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<div class="container">
+  <input type="text" name="empId" [(ngModel)]="id"/>
+  <input type="button" (click)="findEmp()" value="Find" />
+
+  <div *ngIf="emp!=null">
+    Employee name: {{emp.firstName}} {{emp.lastName}}<br/>
+  </div>
+
+  <div *ngIf="errMessage!=null" >
+  {{ errMessage }}
+  </div>
+  <h2>Create new employee:</h2>
+  <app-add-employee></app-add-employee>
+</div>
+<router-outlet></router-outlet>
