@@ -23,7 +23,7 @@ import com.cg.empapp.services.EmployeeService;
 //Allow External application running at localhost:4200 
 //To access all my services
 @CrossOrigin(allowedHeaders="*",
-		origins= {"http://localhost:4200"})
+		origins= {"*"})
 public class EmployeeController {
 
 	@Autowired private EmployeeService service;

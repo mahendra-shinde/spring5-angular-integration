@@ -39,3 +39,25 @@ Pre-requisites:
 4.   A Web-browser would be launched with URL:
     
         > http://localhost:4200/
+
+
+5. Try with docker-compose
+
+   ```
+   $ docker-compose up -d
+   $ docker-compose ps
+   ```
+
+6.  Open TWO Browser windows for URL
+        
+        http://localhost:8080/
+
+    Try Creating employee 101 in front-end app (8080)
+
+        http://localhost:9000/employees/101
+
+7.  Destroy the instances
+
+    ```
+    $ docker-compose down
+    ```

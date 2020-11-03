@@ -10,6 +10,8 @@ networks:
 services:
   backend:
     image: mahendrshinde/back-end:latest
+    ports:
+      - "9000:8080"
     networks:
     - appnet
 

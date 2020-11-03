@@ -2,9 +2,9 @@ FROM node:latest as build
 WORKDIR /app
 COPY package*.json /app/
 RUN ["npm","install"]
-COPY src/ /app/src/
-RUN ["ng","build"]
+COPY . /app/
+RUN ["npm","run","build"]
 
 FROM nginx
-COPY --from=build /app/front-end/dist/empweb /usr/share/nginx/html/
+COPY --from=build /app/dist/empweb /usr/share/nginx/html/
 

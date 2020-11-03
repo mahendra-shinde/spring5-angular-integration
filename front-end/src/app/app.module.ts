@@ -22,5 +22,5 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { 
-  public static  BASE_URL:string = "http://backend:8080/employees"
+  public static  BASE_URL:string = "http://localhost:9000/employees"
 }
